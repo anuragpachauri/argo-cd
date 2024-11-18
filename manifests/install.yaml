@@ -22787,6 +22787,16 @@ metadata:
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
   name: argocd-cm
+data:
+  dex.config: |
+    connectors:
+    - type: github
+      id: github
+      name: GitHub
+      config:
+        clientID: Ov23liza2sD5lgeMVJJc
+        clientSecret: 6aa50af4814166f62fc9eaaffd253f990fd176fc
+        redirectURI: https://argocd.anurag.today/api/dex/callback
 ---
 apiVersion: v1
 kind: ConfigMap
